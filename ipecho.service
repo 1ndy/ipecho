@@ -1,0 +1,10 @@
+[Description]
+Run an IP echo service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ipecho
+Requires=network-online.target
+
+[Install]
+WantedBy=multi-user.target
